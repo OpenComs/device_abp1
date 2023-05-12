@@ -32,24 +32,24 @@ To facilitate the making of this beltpack, it is composed of 4 individual PCBs:
 
 ## PCB & Schematics
 ### Main PCB
- - Schematic: [[PDF]](electronics/main_pcb/SCH_OpenComs_ABP1_2023-05-12.pdf) [[EasyEDA](electronics/main_pcb/SCH_EasyEDA_OpenComs_ABP1_2023-05-12.json) [[Altium]](electronics/main_pcb/SCH_AltiumExport_OpenComs_ABP1_2023-05-12.zip)
+ - Schematic: [[PDF]](electronics/main_pcb/SCH_OpenComs_ABP1_2023-05-12.pdf) [[EasyEDA]](electronics/main_pcb/SCH_EasyEDA_OpenComs_ABP1_2023-05-12.json) [[Altium]](electronics/main_pcb/SCH_AltiumExport_OpenComs_ABP1_2023-05-12.zip)
  - PCB: [[EasyEDA]](electronics/main_pcb/PCB_EasyEDA_OpenComs_ABP1_2023-05-12.json) [[Altium]](electronics/main_pcb/PCB_AltiumExport_OpenComs_ABP1_2023-05-12.pcbdoc) [[Gerber]](electronics/main_pcb/PCB_Gerber_PCB_OpenComs_ABP1.zip)
  - Bom: [[CSV]](electronics/main_pcb/BOM_OpenComs_ABP1_2023-05-12.csv)
 
 ### Front panel
- - Schematic: [[PDF]](electronics/front_panel/SCH_PDF_OpenComs_ABP1_Front panel_.pdf) [[EasyEDA]](electronics/front_panel/SCH_EasyEDA_OpenComs_ABP1_Front panel_2023-05-12.json) [[Altium]](electronics/front_panel/SCH_Altium_OpenComs_ABP1_Front panel_.schdoc)
- - PCB: [[EasyEDA]](electronics/front_panel/PCB_EasyEDA_OpenComs_ABP1_Front panel_2023-05-12.json) [[Altium]](electronics/front_panel/PCB_Altium_OpenComs_ABP1_Front panel_2023-05-12.pcbdoc) [[Gerber]](electronics/front_panel/PCB_Gerber_OpenComs_ABP1_Front panel.zip)
- - Bom: [[CSV]](electronics/front_panel/BOM_OpenComs_ABP1_Front panel_2023-05-12.csv)
+ - Schematic: [[PDF]](electronics/front_panel/SCH_PDF_OpenComs_ABP1_Front-panel.pdf) [[EasyEDA]](electronics/front_panel/SCH_EasyEDA_OpenComs_ABP1_Front-panel_2023-05-12.json) [[Altium]](electronics/front_panel/SCH_Altium_OpenComs_ABP1_Front-panel_.schdoc)
+ - PCB: [[EasyEDA]](electronics/front_panel/PCB_EasyEDA_OpenComs_ABP1_Front-panel_2023-05-12.json) [[Altium]](electronics/front_panel/PCB_Altium_OpenComs_ABP1_Front-panel_2023-05-12.pcbdoc) [[Gerber]](electronics/front_panel/PCB_Gerber_OpenComs_ABP1_Front-panel.zip)
+ - Bom: [[CSV]](electronics/front_panel/BOM_OpenComs_ABP1_Front-panel_2023-05-12.csv)
 
 ### Back panel
  - Schematic: none
- - PCB: [[EasyEDA]](electronics/back_panel/PCB_EasyEDA_OpenComs_ABP1_Back panel_2023-05-12.json) [[Altium]](electronics/main_pcb/PCB_Altium_OpenComs_ABP1_Back panel_2023-05-12.pcbdoc) [[Gerber]](electronics/back_panel/PCB_Gerber_OpenComs_ABP1_Back panel_2023-05-12.zip)
+ - PCB: [[EasyEDA]](electronics/back_panel/PCB_EasyEDA_OpenComs_ABP1_Back-panel_2023-05-12.json) [[Altium]](electronics/back_panel/PCB_Altium_OpenComs_ABP1_Back-panel_2023-05-12.pcbdoc) [[Gerber]](electronics/back_panel/PCB_Gerber_OpenComs_ABP1_Back-panel_2023-05-12.zip)
  - Bom: none
 
 ### Back panel jacks
- - Schematic: [[PDF]](electronics/back_panel_jacks/SCH_PDF_OpenComs_ABP1_Back panel_Jacks_2023-05-12.pdf) [[EasyEDA]](electronics/back_panel_jacks/SCH_EasyEDA_OpenComs_ABP1_Back panel_Jacks_2023-05-12.json) [[Altium]](electronics/back_panel_jacks/SCH_Altium_OpenComs_ABP1_Back panel_Jacks_Connectors_2023-05-12.schdoc)
- - PCB: [[EasyEDA]](electronics/back_panel_jacks/PCB_EasyEDA_OpenComs_ABP1_Back panel_Jacks_2023-05-12.json) [[Altium]](electronics/back_panel_jacks/PCB_Altium_OpenComs_ABP1_Back panel_Jacks_2023-05-12.pcbdoc) [[Gerber]](electronics/back_panel_jacks/PCB_Gerber_OpenComs_ABP1_Back panel_Jacks_2023-05-12.zip)
- - Bom: [[CSV]](electronics/back_panel_jacks/BOM_OpenComs_ABP1_Back panel_Jacks_2023-05-12.csv)
+ - Schematic: [[PDF]](electronics/back_panel_jacks/SCH_PDF_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.pdf) [[EasyEDA]](electronics/back_panel_jacks/SCH_EasyEDA_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.json) [[Altium]](electronics/back_panel_jacks/SCH_Altium_OpenComs_ABP1_Back-panel_Jacks_Connectors_2023-05-12.schdoc)
+ - PCB: [[EasyEDA]](electronics/back_panel_jacks/PCB_EasyEDA_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.json) [[Altium]](electronics/back_panel_jacks/PCB_Altium_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.pcbdoc) [[Gerber]](electronics/back_panel_jacks/PCB_Gerber_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.zip)
+ - Bom: [[CSV]](electronics/back_panel_jacks/BOM_OpenComs_ABP1_Back-panel_Jacks_2023-05-12.csv)
 
 ## 3D
 Front:
