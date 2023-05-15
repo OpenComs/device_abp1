@@ -1,11 +1,11 @@
 # ABP1 (Analog beltpack 1)
 
-The ABP1 is a straightforward and reliable beltpack for seamless communication in professional settings. 
+The ABP1 is a straightforward and reliable beltpack intercom for seamless communication. This beltpack uses the 2 wire partyline interface.
 
 ## Concept
-The ABP1 was designed for simplicity. It provides users with a compact and lightweight device that seamlessly integrates into OpenComs partyline analog system. The ABP1 serves as a great starting point for DIY enthusiasts, hobbyists, and developers looking to build their own analog beltpack for partyline intercom systems.
+The ABP1 was designed for simplicity. It provides users with a compact and lightweight device that seamlessly integrates into OpenComs partyline analog system. The ABP1 serves as a great starting point for anyone looking to build and/or extend their own analog beltpack for partyline intercom systems.
 
-The idea was to create a "as simple as possible" starting point for future versions. For example instead of the typicall 4-pin XLR found on beltbacks for headsets, the APB1 uses two 3.5mm jacks. Here are some other differences
+The idea was to create a "as simple as possible" starting point for future versions. For example instead of the typicall 4-pin XLR found on beltbacks for headsets, the APB1 uses two 3.5mm jacks. Here are some other differences:
 
 The intercom is composed of:
 
@@ -17,18 +17,20 @@ The intercom is composed of:
  - Two 3.5mm jack (headphones + electret microphone)
  - 16 Leds for the front panel indicator
 
-To facilitate the making of this beltpack, it is composed of 4 individual PCBs:
+To facilitate the building process of this beltpack, it is composed of 4 individual PCBs:
 
   - Front panel
     - Holes for the buttons, volume and sidetone
-    - 16 Rear facing LEDs (WS2812B-**4020**)
-    - Pads for an inverted potentiometer for the sidetone
+    - 16 Side facing LEDs (WS2812B-**4020**)
+    - Pads for a potentiometer placed up-side-down for the sidetone
   - Back panel
-    - Holes for the XLR connectors
-    - Holes for the 3.5mm jacks
+    - Holes for the 2 XLR connectors
+    - Holes for the 2 3.5mm jacks
     - Holes for the two mounting screw
   - Back panel jack board
     - Simple board to hold the two jacks at a right angle
+
+As the digital side fully control the talk, mute and call signals, this intercom also supports RMK (remote-mic-kill) provided that the off pulse is long enought to reset the microcontroller.
 
 ## PCB & Schematics
 ### Main PCB
@@ -59,6 +61,25 @@ Back:
 *Note: These screenshot may not be fully up to date, especially the models of PCBs*
 
 The 3D printed case is availible at: [[Solidworks source]](3d/case.sldprt) [[STL]](3d/case.stl) 
+
+## Firmware 
+
+The ABP1 digital side is based on the Atmega328p, the same as the arduino uno/nano/.... which makes it very easilly hackable to do what you want.<br>
+The firmware can be found here:[https://github.com/OpenComs/device_abp1/tree/main/firmware](https://github.com/OpenComs/device_abp1/tree/main/firmware)
+
+At the start you'll find some configuration values:
+```cpp
+#define CONF_CALL_BLINK_DURATION 1500
+#define CONF_CALL_VIBRATE_AFTER 5000
+#define CONF_CALL_BUZZ_AFTER 10000
+#define CONF_TALK_LATCH_THRESHOLD 250
+```
+
+ - The `CONF_CALL_BLINK_DURATION` sets how long will the leds blink if a call is detected
+ - The `CONF_CALL_VIBRATE_AFTER` sets how long a call signal need to be detected to enable the vibration motor
+ - The `CONF_CALL_BUZZ_AFTER` sets how long a call signal need to be detected to enable the buzzer
+ - The `CONF_TALK_LATCH_THRESHOLD` set the maximum time the talk button should pressed to latch the state change instead of the tremporary change
+
 ## Cost
 
 The overall cost of this device is pretty low, especially if you build multiple of them.
